@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="force-svg" href="http://berjon.com/blog/2009/07/force-svg.html">
+    <script type="application/javascript">(function()
+{
+  function ForceSVGInHTML()
+  {
+    window.removeEventListener("load", ForceSVGInHTML, true);
+    var svgs = document.getElementsByTagName("svg");
+    for (var i = 0; i < svgs.length; i++) {
+      var svg = svgs[i];
+      var div = document.createElement("div");
+      div.appendChild(svg.cloneNode(true));
+      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
+      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
+    }
+  }
+  window.addEventListener("load", ForceSVGInHTML, true);
+})();</script>
+  </head>
+  <body>
+    <h1 style="background-color: #ff6600; text-align: center;"><span style="color: white;"><b><u>Ce
+            site est en creation</u></b></span></h1>
+    <div style="text-align: center;">
+      <p class="tw-data-text tw-text-large tw-ta" data-placeholder="Traduction"
+
+id="tw-target-text" dir="ltr" style="  unicode-bidi: isolate; font-size: 28px; line-height: 36px; background-color: #f8f9fa; border: medium none; padding: 2px 0.14em 2px 0px; position: relative; margin: -2px 0px; resize: none; font-family: inherit; overflow: hidden; width: 283px; white-space: pre-wrap; overflow-wrap: break-word; color: #222222; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span
+
+tabindex="0" lang="el">έναLauncher</span></p>
+    </div>
+    <p></p>
+    <p><img src="file:///C:/Users/Florent/Desktop/android-2019-seeklogo.com-3.svg"
+
+        alt="Android" style="width: 225px; height: 196px;"></p>
+    <pre class="tw-data-text tw-text-large tw-ta" data-placeholder="Traduction"
+
+id="tw-target-text" dir="ltr" style="unicode-bidi: isolate; font-size: 28px; line-height: 36px; background-color: rgb(248, 249, 250); border: none; padding: 2px 0.14em 2px 0px; position: relative; margin: -2px 0px; resize: none; font-family: inherit; overflow: hidden; text-align: left; width: 283px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(34, 34, 34); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><span
+
+tabindex="0" lang="el">έναLauncher<br></span></pre>
+    <p></p>
+  </body>
+</html>
