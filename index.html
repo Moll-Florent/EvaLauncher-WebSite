@@ -1,47 +1,151 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>ένα</title>
-</head>
-
-<body>
-  <div class="center">
-    <h1>ένα</h1>
-    <table class="center">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>ένα</title>
+    <link rel="force-svg" href="http://berjon.com/blog/2009/07/force-svg.html">
+    <script type="application/javascript">(function()
+  function ForceSVGInHTML()
+  {
+    window.removeEventListener("load", ForceSVGInHTML, true);
+    var svgs = document.getElementsByTagName("svg");
+    for (var i = 0; i < svgs.length; i++) {
+      var svg = svgs[i];
+      var div = document.createElement("div");
+      div.appendChild(svg.cloneNode(true));
+      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
+      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
+    }
+  }
+  window.addEventListener("load", ForceSVGInHTML, true);
+})();</script>
+  </head>
+  <body style="              background-color: #666666;">
+    <h1 style="font-size: 150px ; text-align: center;"><strong><span style="color: #5ef680;">ένα</span></strong></h1>
+    <table style="width: 100%;" border="1">
       <tbody>
         <tr>
-          <td><a href="/EvaLauncher-WebSite/">Home</a></td>
-          <td><a href="#Launcher">Launcher</a></td>
-          <td><a href="#Browser">Browser</a></td>
-          <td><a href="#Contact">Contact</a></td>
-          <td><a href=" %CE%AD%CE%BD%CE%B1Wiki.html">Wiki</a></td>
-          <td><input name="Search" value="search (Not Working)" disabled="disabled" readonly="readonly"
-              autocomplete="on" type="search">
-            <input name="Go" value="search" form="search" disabled="disabled" type="button"></td>
+          <td style="background-color: #66ff99;">| <a href="/EvaLauncher-WebSite/"
+
+              style="color: black;">Home</a> | <a href="#Launcher" style="color: black;">Launcher</a>
+            | <a href="#Browser" style="color: black;">Browser</a> | <a href="#Contact"
+
+              style="color: #020202;">Contact </a>| <a href="%CE%AD%CE%BD%CE%B1Wiki.html"
+
+              style="color: black;">Wiki</a> |&nbsp; <input name="Search" value="search (Not Working)"
+
+              disabled="disabled" readonly="readonly" autocomplete="on" type="search"><input
+
+name="Go" value="search" form="search" disabled="disabled" type="button"> </td>
         </tr>
       </tbody>
     </table>
-    <div class="separator"></div>
-    <img id="android-image" src="android-2019-seeklogo.com-3.svg" alt="Android">
-    <div class="separator"></div>
-    <p>Created with Android Studio</p>
-    <h1>APPS</h1>
-    <h1>The Launcher</h1>
-    <p>SOON</p>
+    <p><br>
+    </p>
+    <hr style="color: white; margin-left: auto; margin-right: auto;">
+    <h1 style="text-align: center; background-color: #666666;"><img src="android-2019-seeklogo.com-3.svg"
 
-    <h1>The Browser</h1>
-    <a class="download-button">DOWNLOAD</a>
-    <div class="separator"></div>
-    <a href="mailto:moll.florent@gmail.com">CONTACT ME</a>
-    <div class="separator"></div>
+        alt="Android" style="width: 225px; height: 196px;"></h1>
+    <hr style="width: 100%; color: white; margin-left: auto; margin-right: auto;">
+    <table style="width: 100%; height: 29px;" border="1">
+      <tbody>
+        <tr>
+          <td style="text-align: center; width: 296.117px; background-color: #5ef680;"><strong>Created
+              with Android Studio</strong></td>
+          <td style="width: 507.617px; background-color: #5ef680; text-align: center;"><strong>Light</strong></td>
+          <td style="width: 347.6px; background-color: #5ef680; text-align: center;"><strong>Free<br>
+            </strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 style="text-align: center; background-color: #8c8c8c;"></h1>
+    <hr style="width: 100%; color: white; margin-left: auto; margin-right: auto;">
+    <h1 style="font-size: 40px; text-align: center;">
+      <div style="text-align: center;">
+        <table style="width: 100%" border="1">
+          <tbody>
+            <tr>
+              <td style="font-size: 40px; text-align: center; background-color: #5ef680;"><b><u>APPS</u><br>
+                </b> </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </h1>
+    <h1 style="font-size: 40px; text-align: center;"><a id="Launcher"><u><span style="color: #5ef680;">The
+            Launcher</span></u></a></h1>
+    <p><br>
+    </p>
+    <h1 style="text-align: center; background-color: #666666;"><span style="color: #77a977;"><b><span
 
-    2019 Eva Website is Created by <a href="https://github.com/Moll-Florent">Florent Moll.</a>
-    This Website is created with <a href="https://bluegriffon.org">BlueGriffon </a>and <a
-      href="https://github.com/">Github</a>
-</body>
+            tabindex="0" lang="el"><span style="color: #79ff86;">ένα</span><span
 
+              style="color: #090e09;">Launcher</span></span></b></span></h1>
+    <div style="text-align: center;"><a href="https://mediafire.com"><img src="dessin.svg"
+
+          alt="Download" style="width: 260px; height: 130px;"><br>
+      </a></div>
+    <div style="text-align: center;">
+      <hr style="width: 100%; color: white; margin-left: auto; margin-right: auto;"></div>
+    <div style="text-align: center;">
+      <table style="width: 100%; height: 55px;" border="1">
+        <tbody>
+          <tr>
+            <td style="font-size: 40px; text-align: center; background-color: #5ef680; vertical-align: middle;"><b><u>SOON</u><br>
+              </b> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </div>
+    <div style="text-align: center;">
+      <h1 style="font-size: 40px; text-align: center;"><u><span style="color: #5ef680;"><a
+
+              name="Browser" id="Browser"></a>The Browser</span></u></h1>
+      <h1 style=" text-align: center;"><span style="color: #77a977;"><b><span tabindex="0"
+
+              lang="el"><span style="color: #6bf074;">ένα</span><span style="color: #090e09;">Browser</span></span></b></span></h1>
+      <p><br>
+      </p>
+      <p><a href="https://mediafire.com"><img src="dessin.svg" alt="Download" style="width: 260px; height: 130px;"><br>
+        </a></p>
+      <hr style="width: 100%; color: white; margin-left: auto; margin-right: auto;">
+      <div style="text-align: center;">
+        <table style="width: 100%; height: 55px;" border="1">
+          <tbody>
+            <tr>
+              <td style="font-size: 40px; text-align: center; background-color: #5ef680; vertical-align: middle;"><b><a
+
+                    name="Contact" id="Contact"></a><a href="mailto:moll.florent@gmail.com"
+
+                    style="color: black;">CONTACT ME</a><br>
+                </b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="text-align: center;"><br>
+    </div>
+    <div style="text-align: center;">
+      <hr style="width: 100%; color: white; margin-left: auto; margin-right: auto;">
+      <table style="width: 100%" border="1">
+        <tbody>
+          <tr>
+            <td style="width: 560.683px;">2019 Eva Website is Created by <a href="https://github.com/Moll-Florent"
+
+                style="color: black;">Florent Moll</a> </td>
+            <td style="width: 595.983px;">This Website is created with <a href="https://bluegriffon.org"
+
+                style="color: #020202;">BlueGriffon </a>and <a href="https://github.com/"
+
+                style="color: #020202;">Github</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </div>
+  </body>
 </html>
